@@ -49,13 +49,17 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
     <meta name="msapplication-TileImage" content="/images/ms-icon-icons/144x144.png">
 
-    
-    <link rel="preload" as="style" href="/css/nav.css">
-    <link rel="preload" as="style" href="/css/chroma.css">
-    <link rel="preload" as="style" href="/css/index.css">
-    <link rel="stylesheet" href="/css/nav.css" type="text/css">
-    <link rel="stylesheet" href="/css/chroma.css" type="text/css">
-    <link rel="stylesheet" href="/css/index.css" type="text/css">
+    <!-- CSS/SCSS -->
+    {{ $options := (dict "targetPath" "css/index.css" "outputStyle" "compressed") }}
+    {{ $style := resources.Get "scss/index.scss" | resources.ToCSS $options }}
+
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+    {{ "<!--[if lt IE 10]>" | safeHTML }}
+    <script src="/html5shiv/html5shiv.js"></script>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css-for-ie9/ie9.css">
+    {{ "<![endif]-->" | safeHTML }}
+
     <style>@-moz-document url-prefix() {.lazy:-moz-loading {visibility:hidden;}}.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}}</style>
 
     <!-- RSS -->
