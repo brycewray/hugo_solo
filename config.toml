@@ -1,0 +1,36 @@
+baseURL = "https://brycewray.com"
+languageCode = "en-us"
+title = "BryceWray.com"
+
+summaryLength = 30 # words
+FootnoteReturnLinkContents = "&#8593;"
+enableRobotsTXT = true
+
+Paginate = 5 #so five will appear on each page
+
+[params]
+    Author = "Bryce Wray"
+    Description = "Bryce Wray’s Web site — observations, opinions, geekiness"
+
+[markup]
+    [markup.goldmark]
+      [markup.goldmark.renderer]
+        unsafe = true # only to allow for inline HTML and/or JS
+    [markup.highlight]
+      guessSyntax = true
+      noClasses = false
+
+[menu]
+    [[menu.main]]
+        identifier = "about"
+        name = "About"
+        title = "The About Me page"
+        url = "/about/"
+        weight = 100
+    
+    [[menu.main]]
+        identifier = "posts"
+        name = "Posts"
+        title = "This site’s posts"
+        url = "/posts/"
+        weight = 110
