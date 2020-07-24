@@ -2,8 +2,7 @@ html,
 body {
   font-family: $sans-serif-boot !important;
   color: $default-color;
-  letter-spacing: -0.015em; // old browsers
-  letter-spacing: -0.015rem;
+  letter-spacing: -0.0075em;
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -11,7 +10,7 @@ body {
 }
 
 p, li {
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 h1, .h1,
