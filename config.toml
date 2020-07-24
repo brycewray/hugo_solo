@@ -1,6 +1,6 @@
-baseURL = "https://brycewray.com"
+# baseURL = "https://brycewray.com" # add this, of course
 languageCode = "en-us"
-title = "BryceWray.com"
+title = "Site title goes here"
 
 summaryLength = 30 # words
 FootnoteReturnLinkContents = "&#8593;"
