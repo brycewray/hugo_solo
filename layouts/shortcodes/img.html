@@ -37,9 +37,9 @@
 
 {{ $img := imageConfig ($src.RelPermalink | printf "content/%s" ) }}
 
-<div class="img" style="background: url(data:image/jpeg;base64,{{ $lqip.Content | base64Encode  }}); background-size: cover;">
+<div class="img" style="background: url(data:image/jpeg;base64,{{ $lqip.Content | base64Encode  }}); background-size: cover; display: inline;">
   <img
-    class="lazy"
+    class="lazy containedImage"
     data-sizes="auto"
     data-srcset='
     {{ if ge $src.Width "500" }}
