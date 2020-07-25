@@ -96,11 +96,11 @@ h3.twitter-border {
     height: 60vh;
     /* image supplied programmatically by template */
     @media screen and (min-width: 769px) and (max-width: 1024px) {
-      height: 70vh;
+      height: 80vh;
     }
     @media screen and (min-width: 1025px) {
       background-attachment: fixed;
-      height: 80vh;
+      height: 90vh;
     }
   }
   &-title-block {
@@ -215,8 +215,6 @@ img.postsFeatImg {
   font-size: $bigger + unquote("em");
 }
 
-$homeHeroImageURL: "/images/typewriter-monochrome_2242164_1280x720_60pct.jpg";
-
 .hero { // specifically for home page, at least to begin with
   background-color: #0088ff;
   // old-browser stuff...
@@ -230,12 +228,11 @@ $homeHeroImageURL: "/images/typewriter-monochrome_2242164_1280x720_60pct.jpg";
   background-repeat: no-repeat;
   margin-bottom: 0;
   height: 400px; // old browsers
-  height: 40vh;
+  height: 50vh;
   &-home {
-    background-image: url($homeHeroImageURL);
     @media screen and (min-width: 1025px) {
       background-attachment: fixed;
-      height: 50vh;
+      height: 65vh;
     }
   }
 }
