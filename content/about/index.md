@@ -1,5 +1,5 @@
 ---
-title: "Your UNIQUE title here."
+title: "Your UNIQUE title here"
 description: "Your UNIQUE description here."
 author: Your name here
 date: 2018-09-14T15:00:00-05:00
