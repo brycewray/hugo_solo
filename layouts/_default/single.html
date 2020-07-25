@@ -1,4 +1,5 @@
 {{ define "main" }}
+
 <style type="text/css">
   {{ if .Params.featured_image }}
    {{ with .Resources.GetMatch (.Params.featured_image) }}
@@ -15,7 +16,7 @@
  
      @media (min-width: 768px) {
        .background-hero-div {
-         backgrouind-image: url('{{ $small.RelPermalink }}')
+         background-image: url('{{ $small.RelPermalink }}')
        }
      }
  
