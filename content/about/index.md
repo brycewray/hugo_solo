@@ -11,7 +11,7 @@ featured_image_alt: Stylistic image of question mark superimposed over computer 
 featured_image_caption: "Image: Dalamo; Pixabay" 
 ---
 
-A few words about you. Your opening text goes here.
+A few words about you.  Your opening text goes here..
 
 ## In-article heading --- it's an H2 because your title is the H1
 

@@ -11,7 +11,7 @@ featured_image_alt: Letters for old-style typesetting # Always include an ALT ta
 featured_image_caption: "Image: Pixabay" # Quotation marks allow colons, semicolons, etc.
 ---
 
-Your opening text goes here
+ Your opening text goes here.
 
 ## In-article heading --- it's an H2 because your title is the H1
 

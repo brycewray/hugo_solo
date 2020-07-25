@@ -11,7 +11,7 @@ featured_image_alt: Lego blocks arranged stylistically # Always include an ALT t
 featured_image_caption: "Image: M W; Pixabay" # Quotation marks to allow colon
 ---
 
-Your opening text goes here
+ Your opening text goes here.
 
 ## In-article heading --- it's an H2 because your title is the H1
 

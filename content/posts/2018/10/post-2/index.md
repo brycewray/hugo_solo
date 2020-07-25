@@ -17,7 +17,7 @@ featured_image_caption: "Image: Pixabay" # Quotation marks allow colons, semicol
 &nbsp;<br />
 
 
-Your opening text goes here
+ Your opening text goes here.
 
 ## In-article heading --- it's an H2 because your title is the H1
 

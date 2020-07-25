@@ -11,7 +11,7 @@ featured_image_alt: "Hospital room “door bear” to commemorate birth of Kenne
 #featured_image_caption: # Commented-out because there was no caption for this particular featured image
 ---
 
-Your opening text goes here
+ Your opening text goes here.
 
 ## In-article heading --- it's an H2 because your title is the H1
 

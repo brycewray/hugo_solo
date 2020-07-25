@@ -12,9 +12,9 @@ featured_image_alt: "Baseball game at Globe Life Park, Arlington, Texas" # Alway
 featured_image_caption: "Image: rwelborn; Pixabay" # Quotation marks allow colons, semicolons, etc.
 ---
 
-There are no images within this post's body so it's OK to name it whatever you want and Hugo will make that the end of its URL. This is different from Posts 1 through 3 and Post 8, each of which has images in its respective body section and, thus, has to exist as `index.md` inside a folder with the post's end-of-URL. Of course, if this apparent inconsistency bothers you, you can just do all your posts the same way as those posts with body images: i.e., put each post inside a *folder* named (*e.g.* for this one) "post-7" and then calling the folder's Markdown file "index.md" rather than its current name.
+There are no images within this post's body so it's OK to name it whatever you want and Hugo will make that the end of its URL. This is different from Posts 1 through 3 and Post 8, each of which has images in its respective body section and, thus, has to exist as `index.md` inside a folder with the post's end-of-URL. Of course, if this apparent inconsistency bothers you, you can just handle all your posts the same way as those posts with body images: *i.e.*, put each post inside a *folder* named (*e.g.* for this one) "post-7" and then calling the folder's Markdown file "index.md" rather than its current name.
 
-Your opening text goes here
+ Your opening text goes here.
 
 ## In-article heading --- it's an H2 because your title is the H1
 
