@@ -3,7 +3,7 @@ title: "Home page"
 description: "brycewray.com: Opinions, observations, nerdiness, miscellany." # quotation marks to allow colon
 author: Bryce Wray
 date: 2018-09-14T21:00:00-05:00
-lastmod: 2019-10-02T19:15:00-05:00
+lastmod: 2020-07-24T16:00:00-05:00
 draft: false
 featured_image: /images/typewriter-monochrome_2242164_1280x720_60pct.jpg
 featured_image_base: typewriter-monochrome_2242164_1280x720
@@ -15,7 +15,7 @@ featured_image_caption: "Image: Pixabay"
 
 # Welcome.
 
-Eons ago, when [the Web was a new thing](http://info.cern.ch/hypertext/WWW/TheProject.html) and people still capitalized _Web_, consarn it, [ISPs](https://en.wikipedia.org/wiki/Internet_service_provider) tended to provide free file space for people to have [little personal Web sites](https://consumerist.com/2015/03/20/where-did-everyone-from-the-90s-go-when-we-all-got-facebook-and-quit-web-1-0/). Back in those days, one did so with whatever [FTP](https://en.wikipedia.org/wiki/File_Transfer_Protocol) client one could find, what we now know as static [HTML](https://www.w3schools.com/html/html_intro.asp) files (but not [CSS](https://www.w3schools.com/Css/), not yet anyway), and lots and lots of [dialup modem noise](https://en.wikipedia.org/wiki/File:Dial_up_modem_noises.ogg).
+Eons ago, when [the web was a new thing](http://info.cern.ch/hypertext/WWW/TheProject.html) and people still capitalized *Web* and used two words for *Web site*, consarn it, [ISPs](https://en.wikipedia.org/wiki/Internet_service_provider) tended to provide free file space for people to have [little personal Web sites](https://consumerist.com/2015/03/20/where-did-everyone-from-the-90s-go-when-we-all-got-facebook-and-quit-web-1-0/). Back in those days, one did so with whatever [FTP](https://en.wikipedia.org/wiki/File_Transfer_Protocol) client one could find, what we now know as static [HTML](https://www.w3schools.com/html/html_intro.asp) files (but not [CSS](https://www.w3schools.com/Css/), not yet anyway), and lots and lots of [dialup modem noise](https://en.wikipedia.org/wiki/File:Dial_up_modem_noises.ogg).
 
 And, yes, I had one, back on what then was called [GTE.net](https://en.wikipedia.org/wiki/GTE). In fact, I was a "Charter Subscriber" to that ISP.
 
