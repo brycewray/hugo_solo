@@ -8,16 +8,22 @@
     {{ .Content }}
   </div>
   <div class="column-home">
-    <h2 class="h1" style="margin-bottom: 1.5rem;">Latest posts</h2>
-    {{ range first 7 (where .Site.RegularPages "Section" "posts") }}				
-      <div>          
-        
-          <h2 class="h5" style="margin-bottom: 0;"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
-          <time datetime="{{ .PublishDate }}" class="pokey text-muted text-sans-serif">{{ .PublishDate.Format "January 2, 2006" }}</time>
-          <p class="pokey text-body">
-            {{ .Description }}
-          </p>
-        
+    <h2 class="h1" style="margin-bottom: 1.5rem;">Recent <a href="/posts">posts</a></h2>
+    {{ range first 5 (where .Site.RegularPages "Section" "posts") }}				
+      <div>
+        <h2 class="h5" style="margin-bottom: 0;">
+          <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a><br />
+          <span style="font-size: 85%;">{{ .Params.Subtitle }}</span>
+        </h2>
+        <p class="legal dateInfo" style="margin-top: 0.25em; margin-bottom: 0; line-height: 1.5;">
+          Published: {{ .PublishDate.Format "January 2, 2006" }}
+          {{- if ne .PublishDate .Lastmod }}
+          <br />Last modified: {{ .Lastmod.Format "January 2, 2006" }}
+          {{- end }}
+        </p>
+        <p class="pokey text-body" style="margin-top: 0.5em;">
+          {{ .Description }}
+        </p>      
       </div>
     {{ end }}
     <p class="text-sans-serif"><a href="/posts/"><strong>All posts</strong></a><span class="pokey"> (five per page)</span></p>
