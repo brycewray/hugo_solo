@@ -2,7 +2,6 @@
 title: "Post 6 with its UNIQUE title" # Quotation marks allow colons, semicolons, etc.
 subtitle: "The UNIQUE Post 6 subtitle" # Quotation marks allow colons, semicolons, etc.
 description: "The UNIQUE description for Post 6." # Quotation marks allow colons, semicolons, etc.
-description: "The UNIQUE Post 6 description" # Quotation marks allow colons, semicolons, etc.
 author: Your name goes here
 date: 2019-06-08T20:25:00 # This would be 8:25 PM (2025) UTC on June 8, 2019
 lastmod: 2019-07-25T19:05:00 # Comment-out this line with a # if content is unchanged
