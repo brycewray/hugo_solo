@@ -6,7 +6,7 @@ author: Your name goes here
 date: 2019-01-19T09:25:00 # This would be 9:25 AM (0925) UTC on Jan. 19, 2019
 lastmod: 2019-10-06T19:00:00 # Comment-out this line with a # if content is unchanged
 draft: false # Make it "true" if you don't want Hugo to "publish" yet
-featured_image: /images/lego-169603_1280x960.jpg # Or whatever image you want to use
+featured_image: lego-169603_1280x960.jpg # Or whatever image you want to use
 featured_image_alt: Lego blocks arranged stylistically # Always include an ALT tag for accessibility
 featured_image_caption: "Image: M W; Pixabay" # Quotation marks to allow colon
 ---

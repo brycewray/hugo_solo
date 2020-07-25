@@ -6,7 +6,7 @@ author: Your name goes here
 date: 2020-03-10T09:50:00 # This would be 9:50 AM (0950) UTC on March 10, 2020
 #lastmod: TBD # As with the other posts, use this only if the content has changed since original date
 draft: false # Make it "true" if you don't want Hugo to "publish" yet
-featured_image: /images/door-bear-for-newborn-Kennedy-Beck_edit_1280x720.jpg # Or whatever image you want to use
+featured_image: door-bear-for-newborn-Kennedy-Beck_edit_1280x720.jpg # Or whatever image you want to use
 featured_image_alt: "Hospital room “door bear” to commemorate birth of Kennedy Beck" # Always include an ALT tag for accessibility --  Quotation marks allow colons, semicolons, etc.
 #featured_image_caption: # Commented-out because there was no caption for this particular featured image
 ---
