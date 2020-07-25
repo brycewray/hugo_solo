@@ -40,8 +40,7 @@ footer {
   @media (min-width: 900px) {
     margin: 25px auto 0 auto; // old browsers
     margin: 2rem auto 0 auto;
-    padding-bottom: 1em; // old browsers
-    padding-bottom: 1rem;
+    padding-bottom: 1em;
     width: 85%;
   }
 }
@@ -58,24 +57,20 @@ figure, .figure {
 }
 
 figure.figurebox {
-  padding: 0.5em; // old browsers
-  padding: 0.5rem;
+  padding: 0.5em;
 }
 
 figcaption p {
-  font-size: $legal + unquote("em"); // old browsers
-  font-size: $legal + unquote("rem");
+  font-size: $legal + unquote("em");
   color: $grey-1;
-  padding-top: 1em; // old browsers
-  padding-top: 1rem;
+  padding-top: 1em;
   text-align: center !important;
 }
 
 h3.twitter-border {
   margin: 1em 0; // old browsers
   margin: 1rem 0;
-  padding: 0.5em 0 0 0; // old browsers
-  padding: 0.5rem 0 0 0;
+  padding: 0.5em 0 0 0;
   border-top: 2px solid $blue;
   a {
     border-bottom: 0;
@@ -191,77 +186,10 @@ img.featured-image {
 
 .featured-image-caption {
   margin-top: 0.25em;
-  padding-bottom: 1.5em; // old browsers
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.5em;
   text-align: center !important;
-  font-size: $legal + unquote("em"); // old browsers
-  font-size: $legal + unquote("rem");
+  font-size: $legal + unquote("em");
   color: $grey-1;
-}
-
-table.leagues {
-	width: 90%;
-	margin: 1em auto 0 auto; // old browsers
-	margin: 1rem auto 0 auto;
-	border: 0;
-	border-collapse: collapse;
-	@media (min-width: 900px) {
-		width: 60%;
-	}
-	td.col {
-		width: 50%;
-	}
-}
-
-table.noborders {
-  width: 100%;
-  @media (min-width: 900px){
-    width: 90%;
-  }
-  margin: 1.5em auto 1em auto; // old browsers
-  margin: 1.5rem auto 1rem auto;
-  border: 0;
-  border-collapse: collapse;
-
-  td {
-    text-align: left !important;
-    vertical-align: middle;
-    padding: 0.25em 0 0.25em 0.5em; // old browsers
-    padding: 0.25rem 0 0.25rem 0.5rem;
-    img {
-      display: inline-block;
-      vertical-align: middle;
-      margin: 0;  
-    }
-  }
-
-  tr:nth-child(even) {
-    background-color: #dfefff;
-  }
-
-  thead {
-    background-color: $darkblue;
-  }
-  
-  thead td {
-    color: #fff !important;
-    font-weight: bold;
-    font-family: $sans-serif-boot;
-  }
-  
-  td.td70 {
-    width: 70%;
-    img {
-      display: block;
-      width: 50%;
-      max-width: 50%;
-      height: auto;
-    }
-  }
-  
-  td.td30 {
-    width: 30%;
-  }
 }
 
 img.postsFeatImg {
@@ -272,23 +200,19 @@ img.postsFeatImg {
   padding-left: 0;
   @media (min-width: 900px) {
     float: right;
-    padding-top: 1em; // old browsers
-    padding-top: 1rem;
-    padding-left: 1.5em; // old browsers
-    padding-left: 1.5rem;
+    padding-top: 1em; 
+    padding-left: 1.5em;
     width: 50%;
     height: auto;
   }
 }
 
 .sortabig {
-  font-size: $sortabig + unquote("em"); // old browsers
-  font-size: $sortabig + unquote("rem");
+  font-size: $sortabig + unquote("em");
 }
 
 .bigger {
-  font-size: $bigger + unquote("em"); // old browsers
-  font-size: $bigger + unquote("rem");
+  font-size: $bigger + unquote("em");
 }
 
 $homeHeroImageURL: "/images/typewriter-monochrome_2242164_1280x720_60pct.jpg";
@@ -328,7 +252,7 @@ $homeHeroImageURL: "/images/typewriter-monochrome_2242164_1280x720_60pct.jpg";
     // end old browsers
     display: grid;
     margin: 0 auto;
-    grid-gap: 2rem; // rem is OK because old browsers don't do grid
+    grid-gap: 2em;
     width: 90%;
     grid-template-columns: 100%;
     @media screen and (min-width: 900px) {
@@ -359,7 +283,7 @@ $homeHeroImageURL: "/images/typewriter-monochrome_2242164_1280x720_60pct.jpg";
     border-spacing: 30px; // old browsers
     display: grid;
     margin: 0 auto;
-    grid-gap: 2rem; // rem is OK because old browsers don't do grid
+    grid-gap: 2em;
     width: 90%;
     grid-template-columns: 100%;
     @media screen and (min-width: 900px) {
@@ -430,8 +354,7 @@ $homeHeroImageURL: "/images/typewriter-monochrome_2242164_1280x720_60pct.jpg";
 			}
 			time {
 				display: block;
-				margin-top: 0.25em; // old browsers
-				margin-top: 0.25rem;
+				margin-top: 0.25em;
 			}
 			img {
         display: block;
@@ -456,8 +379,7 @@ $homeHeroImageURL: "/images/typewriter-monochrome_2242164_1280x720_60pct.jpg";
     font-size: 85%;
     width: 85%;
     max-width: 720px !important;
-    margin-bottom: 3em; // old browsers
-    margin-bottom: 3rem;
+    margin-bottom: 3em;
     @media (min-width: 900px) {
       width: 50%;
     }
@@ -489,8 +411,7 @@ $homeHeroImageURL: "/images/typewriter-monochrome_2242164_1280x720_60pct.jpg";
   border-color: $blue;
   color: #fff;
   border-radius: 6px;
-  padding: 0.25em 0.5em; // old browsers
-  padding: 0.25rem 0.5rem;
+  padding: 0.25em 0.5em;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
