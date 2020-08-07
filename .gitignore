@@ -2,3 +2,5 @@
 resources
 /data
 /.vscode
+# Local Netlify folder
+.netlify
