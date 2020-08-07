@@ -4,7 +4,7 @@ This is a starter set for the [Hugo](https://gohugo.io) [static site generator (
 
 See the [online demo](https://hugo-solo.netlify.app).
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/362e9798-f930-42cd-b6bb-cb64d1a402ba/deploy-status)](https://app.netlify.com/sites/hugo-solo/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/124673ed-cd4c-4174-86c5-7da8785985fb/deploy-status)](https://app.netlify.com/sites/hugo-solo/deploys)
 
 ## How to use
 
