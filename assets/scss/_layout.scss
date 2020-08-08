@@ -99,7 +99,6 @@ h3.twitter-border {
       height: 80vh;
     }
     @media screen and (min-width: 1025px) {
-      background-attachment: fixed;
       height: 90vh;
     }
   }
@@ -231,7 +230,6 @@ img.postsFeatImg {
   height: 50vh;
   &-home {
     @media screen and (min-width: 1025px) {
-      background-attachment: fixed;
       height: 65vh;
     }
   }
