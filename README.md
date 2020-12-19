@@ -2,9 +2,7 @@
 
 This is a starter set for the [Hugo](https://gohugo.io) [static site generator (SSG)](https://staticgen.com), based on my website at [brycewray.com](https://brycewray.com). **Note**: This repo **does NOT** use [Hugo Modules](https://gohugo.io/hugo-modules/), which likely will become the increasingly *de rigueur* way to use Hugo. (I’m going to give a try to learning them, but have no sense of urgency about doing so.)
 
-See the [online demo](https://hugo-solo.netlify.app).
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/124673ed-cd4c-4174-86c5-7da8785985fb/deploy-status)](https://app.netlify.com/sites/hugo-solo/deploys)
+See the [online demo](https://hugo-solo.vercel.app/).
 
 ## How to use
 
