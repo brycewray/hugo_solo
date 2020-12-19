@@ -99,7 +99,7 @@ h3.twitter-border {
       height: 80vh;
     }
     @media screen and (min-width: 1025px) {
-      height: 90vh;
+      height: 95vh;
     }
   }
   &-title-block {
@@ -388,7 +388,7 @@ img.postsFeatImg {
 .bg-dark {
   margin-top: 2em;
   background-color: $darkblue !important;
-	padding: 0.15em 0 0.25em 0;
+	padding: 0.75rem 0;
   div, p {
     color: #fff;
 	}
