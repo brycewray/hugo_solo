@@ -5,6 +5,6 @@
   # see also https://discourse.gohugo.io/t/hugo-build-error-with-gc-minify/20600/14
 
 [context.production.environment]
-  HUGO_VERSION = "0.79.1" # substitute whichever version you prefer
+  HUGO_VERSION = "0.80.0" # substitute whichever version you prefer
   HUGO_ENV = "production"
   
