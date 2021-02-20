@@ -32,11 +32,6 @@
 
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
-    {{ "<!--[if lt IE 10]>" | safeHTML }}
-    <script src="/html5shiv/html5shiv.js"></script>
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css-for-ie9/ie9.css">
-    {{ "<![endif]-->" | safeHTML }}
-
     <style>@-moz-document url-prefix() {.lazy:-moz-loading {visibility:hidden;}}.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}}</style>
     
     <noscript>

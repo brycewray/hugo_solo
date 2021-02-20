@@ -1,66 +1,27 @@
 {{ define "main" }}
 
-<style type="text/css">
-  {{ if .Params.featured_image }}
-   {{ with .Resources.GetMatch (.Params.featured_image) }}
-     {{ $extraSmall := .Resize "768x" }}
-     {{ $small := .Resize "992x" }}
-     {{ $medium := .Resize "1200x" }}
-     {{ $large := .Fill "1920x516 center"}}
-     
-     @media (max-width: 767px) {
-       .hero-home {
-         background-image: url('{{ $extraSmall.RelPermalink }}')
-       }
-     }
- 
-     @media (min-width: 768px) {
-       .hero-home {
-         background-image: url('{{ $small.RelPermalink }}')
-       }
-     }
- 
-     @media (min-width: 1280px) {
-       .hero-home {
-         background-image: url('{{ $medium.RelPermalink }}')
-       }
-     }
- 
-     @media (min-width: 1920px) {
-       .hero-home {
-         background-image: url('{{ $large.RelPermalink }}')
-       }
-     }
-   {{ end }}
- {{ end }}
- </style>
-<div class="hero hero-home"></div>
-<p class="legal ctr text-muted" style="margin-top: 0;">{{ .Params.featured_image_caption }}</p>
-
 <div class="container-home">
-  <div class="column-home">
+  <div class="homeOpen">
+    <h1>Home page</h1>
+    <p>This sentence comes from the template.</p>
     {{ .Content }}
   </div>
-  <div class="column-home">
-    <h2 class="h1" style="margin-bottom: 1.5rem;">Recent <a href="/posts">posts</a></h2>
-    {{ range first 5 (where .Site.RegularPages "Section" "posts") }}				
+  <div class="homePost-Div">
+    <div class="post-line"></div>
+    <h2 class="homePost-Latest">Latest <a href="/posts">posts</a></h2>
+    {{ range first 3 (where .Site.RegularPages "Section" "posts") }}	
       <div>
-        <h2 class="h5" style="margin-bottom: 0;">
-          <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a><br />
-          <span style="font-size: 85%;">{{ .Params.Subtitle }}</span>
-        </h2>
-        <p class="legal dateInfo" style="margin-top: 0.25em; margin-bottom: 0; line-height: 1.5;">
-          Published: {{ .PublishDate.Format "January 2, 2006" }}
-          {{- if ne .PublishDate .Lastmod }}
-          <br />Last modified: {{ .Lastmod.Format "January 2, 2006" }}
-          {{- end }}
-        </p>
-        <p class="pokey text-body" style="margin-top: 0.5em;">
+        <h2 class="homePost-Title"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
+        <p class="homePost-Subtitle">{{ .Params.Subtitle | markdownify }}</p>
+        <p class="homePost-Dates">
+          <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong>{{- if ne .PublishDate .Lastmod }}<br />Last modified {{ .Lastmod.Format "January 2, 2006" }}{{- end }}
+        </p>        
+        <p class="homePost-Description">
           {{ .Description }}
-        </p>      
+        </p>
       </div>
     {{ end }}
-    <p class="text-sans-serif"><a href="/posts/"><strong>All posts</strong></a><span class="pokey"> (five per page)</span></p>
-  </div>
+    <p><a href="/posts/"><strong>All {{ len (where .Site.RegularPages "Section" "posts") }} posts</strong></a> <span class="pokey"><em>(listed five per page)</em></span></p>
+  </div>  
 </div>
 {{ end }}

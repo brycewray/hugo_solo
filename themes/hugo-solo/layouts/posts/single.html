@@ -1,92 +1,34 @@
 {{ define "main" }}
 
-<style type="text/css">
- {{ if .Params.featured_image }}
-  {{ with .Resources.GetMatch (.Params.featured_image) }}
-    {{ $extraSmall := .Resize "768x" }}
-    {{ $small := .Resize "992x" }}
-    {{ $medium := .Resize "1200x" }}
-    {{ $large := .Fill "1920x516 center"}}
-    
-    @media (max-width: 767px) {
-      .background-hero-div {
-        background-image: url('{{ $extraSmall.RelPermalink }}')
-      }
-    }
-
-    @media (min-width: 768px) {
-      .background-hero-div {
-        background-image: url('{{ $small.RelPermalink }}')
-      }
-    }
- 
-   @media (min-width: 992px) {
-     .background-hero-image-holder {
-       background-image: url('{{ $medium.RelPermalink }}')
-     }
-   }
-  
-   @media (min-width: 1200px) {
-     .background-hero-image-holder {
-       .background-image: url('{{ $large.RelPermalink }}')
-     }
-   }
-  {{ end }}
-{{ end }}
-</style>
-<div class="background-hero-div">
-    <div class="background-hero-title-block">
-      <h1 class="background-hero-title-text">{{ .Title | markdownify}}</h1>
-      <h2 class="background-hero-subtitle-text" style="margin-top: 0;">
-        {{- if .Params.Subtitle }}
-        {{ .Params.Subtitle | markdownify }}
-        {{- else }}
-        &nbsp;
-        {{- end }}
-      </h2>
-      <p class="background-hero-description-text">{{ .Params.Description }}</p>
-      <p class="background-hero-p-text">
-        <span style="font-variant: small-caps">published:</span>&nbsp; <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong><br />
-        <span class="pokey">
-        {{- if ne .PublishDate .Lastmod }}
-        <span style="font-variant: small-caps">last modified:</span>&nbsp; {{ .Lastmod.Format "January 2, 2006" }}
-        {{- else }}
-        &nbsp;
-        {{- end }}
-        </span>
-      </p>
-    </div>
-  </div>
-
-  {{- if isset .Params "featured_image_caption" }}
-    <p class="featured-image-caption">{{ index .Params "featured_image_caption" }}</p>
-  {{- end }}
-<div class="post-line"></div> 
+  {{ partial "billboard.html" . }}
 
 <div class="container-narrower">
-  <article class="article">
-    {{ .Content }}
-  </article>
-</div>
-  
+    <article class="article">
+      {{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
+      {{ $minutes := math.Floor (div $readTime 60) }}
+      {{ $seconds := mod $readTime 60 }}
+      {{ $seconds := printf "%02d" $seconds }}
+      <p class="legal ctr sansSerif">Estimated reading time: {{ $minutes }}:{{ $seconds }}</p>
+      <div class="post-line"></div>
+      {{ .Content }}
+    </article>
+  </div>
+
   {{ if or .PrevPage .NextPage }}
     <div class="bg-dark">
-      <h3 class="ctr wht"><a href="/posts/" style="border-bottom: 0;">Other posts</a></h3>
-			<p class="ctr">
+      <h3 class="ctr wht prevnextH3"><a href="/posts" class="border-transparent text-blue-100 hover:text-white">Other posts</a></h3>
+			<p class="ctr prevnextP">
 				{{ with .NextInSection }}
 					<strong>Next</strong>:
-					<a class="next" href="{{.Permalink}}"> {{.Title}}</a>
-				{{ end }}
+					<a class="next" href="{{.RelPermalink}}"> {{.Title}}</a>
+					{{ end }}
 			</p>
-			<p class="ctr">
+			<p class="ctr prevnextP">
 				{{ with .PrevInSection }}
 					<strong>Previous</strong>:
-					<a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
-        {{ else }}
-          &nbsp;<br />
+					<a class="previous" href="{{.RelPermalink}}"> {{.Title}}</a>
 				{{ end }}
 			</p>
     </div>
   {{ end }}
-
 {{ end }}
