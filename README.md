@@ -1,6 +1,6 @@
 # Hugo starter set
 
-This is a starter set for the [Hugo](https://gohugo.io) [static site generator (SSG)](https://staticgen.com), based on the former look-and-feel of my website at [brycewray.com](https://brycewray.com). **Note**: This repo **does NOT** use [Hugo Modules](https://gohugo.io/hugo-modules/), which likely will become the increasingly *de rigueur* way to use Hugo.
+This is a starter set for the [Hugo](https://gohugo.io) [static site generator (SSG)](https://staticgen.com), based on my website at [brycewray.com](https://brycewray.com).
 
 See the [online demo](https://hugo-solo.vercel.app/).
 
@@ -19,4 +19,4 @@ See the [online demo](https://hugo-solo.vercel.app/).
 - Responsive images through Hugo’s [built-in image processing capabilities](https://gohugo.io/content-management/image-processing/), using code borrowed shamelessly (and, where necessary, adapted for later versions of Hugo) from Stereobooster’s “[Responsive images for Hugo](https://dev.to/stereobooster/responsive-images-for-hugo-dn9)” and Strict Panda’s “[Using Image Processing to Load Images in Hugo](https://blog.strict-panda.com/post/image-processing-media-queries/).” (The **real** site’s repo now uses [Cloudinary](https://cloudinary.com) rather than having the images in the repo and processing them as such.)
 - [SCSS](https://sass-lang.com/) [through Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/).
 
-**Note**: If you’re not averse to dealing with JavaScript from [npm](https://npmjs.org) plugins and dependencies, you may be interested in another Hugo repo, [hugo_site_css-grid](https://github.com/brycewray/hugo_site_css-grid), which offers not only the same lazy-loading and image processing but also **[Tailwind CSS](https://tailwindcss.com)** and **[PostCSS](https://postcss.org)**, rather than SCSS.
+**Note**: If you’re not averse to dealing with JavaScript from [npm](https://npmjs.org) plugins and dependencies, you may be interested in another Hugo repo, [hugo_twcss](https://github.com/brycewray/hugo_twcss), which offers not only the same lazy-loading and image processing but also **[Tailwind CSS](https://tailwindcss.com)** and **[PostCSS](https://postcss.org)**, rather than SCSS.
