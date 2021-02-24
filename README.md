@@ -7,7 +7,7 @@ See the [online demo](https://hugo-solo.vercel.app/).
 ## How to use
 
 1. Clone this to a local repo.
-2. Make appropriate changes to `config.toml` to conform to your site’s parameters.
+2. Make appropriate changes to `config.yaml` to conform to your site’s parameters.
 3. Once you have [installed Hugo](https://gohugo.io/getting-started/installing/), run `hugo serve` from your terminal app. You can then view the site in [http://localhost:1313](http://localhost:1313) on your computer.
 4. Read the sample posts and their Markdown files to see how everything works.
 5. Edit the content to make it your own!
