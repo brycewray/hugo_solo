@@ -1,6 +1,6 @@
 # Hugo starter set
 
-This is a starter set for the [Hugo](https://gohugo.io) [static site generator (SSG)](https://staticgen.com), based on my website at [brycewray.com](https://brycewray.com).
+This is a starter set for the [Hugo](https://gohugo.io) [static site generator (SSG)](https://staticgen.com), based on the appearance of my website at [brycewray.com](https://brycewray.com).
 
 See the [online demo](https://hugo-solo.vercel.app/).
 
