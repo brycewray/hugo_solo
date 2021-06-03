@@ -31,8 +31,6 @@
     {{ $style := resources.Get "scss/index.scss" | resources.ToCSS $options }}
 
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-
-    <style>@-moz-document url-prefix() {.lazy:-moz-loading {visibility:hidden;}}.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}}</style>
     
     <noscript>
       <!-- Dark mode for Twitter items if browser blocks JS at bottom; it’s debatable whether it’s needed since non-JS Twitter is pretty spare and mostly adheres to other CSS, but we’ll do it just to be consistent -->
