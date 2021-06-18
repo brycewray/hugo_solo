@@ -28,7 +28,7 @@
 
     <!-- CSS/SCSS -->
     {{ $options := (dict "targetPath" "css/index.css" "outputStyle" "compressed") }}
-    {{ $style := resources.Get "scss/index.scss" | resources.ToCSS $options }}
+    {{ $style := resources.Get "scss/index.scss" | resources.ToCSS $options | fingerprint }}
 
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
     
