@@ -1,5 +1,7 @@
 # Hugo starter set
 
+**Note**: Further development suspended as of 2021-09-11.
+
 This is a starter set for the [Hugo](https://gohugo.io) [static site generator (SSG)](https://staticgen.com), based on the appearance of my website at [brycewray.com](https://www.brycewray.com).
 
 See the [online demo](https://hugo-solo.vercel.app/).
@@ -18,7 +20,5 @@ See the [online demo](https://hugo-solo.vercel.app/).
 - Lazy-loading of some images through use of [lazyload](https://github.com/verlok/vanilla-lazyload).
 - Responsive images through Hugo’s [built-in image processing capabilities](https://gohugo.io/content-management/image-processing/), using code borrowed shamelessly (and, where necessary, adapted for later versions of Hugo) from Stereobooster’s “[Responsive images for Hugo](https://dev.to/stereobooster/responsive-images-for-hugo-dn9)” and Strict Panda’s “[Using Image Processing to Load Images in Hugo](https://blog.strict-panda.com/post/image-processing-media-queries/).” (The **real** site’s repo now uses [Cloudinary](https://cloudinary.com) rather than having the images in the repo and processing them as such.)
 - [SCSS](https://sass-lang.com/) [through Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/).
-
-*Effective 2021-06-18, development on this repository will be* ***on hold*** *at least until Hugo is compatible with [Dart Sass](https://sass-lang.com/dart-sass) rather than the [deprecated Libsass](https://sass-lang.com/blog/libsass-is-deprecated) (see [Hugo issue #8299](https://github.com/gohugoio/hugo/issues/8299)).*
 
 **Note**: If you’re not averse to dealing with JavaScript from [npm](https://npmjs.org) plugins and dependencies, you may be interested in another Hugo repo, [hugo_twcss](https://github.com/brycewray/hugo_twcss), which offers not only the same lazy-loading and image processing but also **[Tailwind CSS](https://tailwindcss.com)** and **[PostCSS](https://postcss.org)**, rather than SCSS.
