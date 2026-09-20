@@ -4,8 +4,6 @@
 
 This is a starter set for the [Hugo](https://gohugo.io) [static site generator (SSG)](https://staticgen.com), based on the appearance of my website at [brycewray.com](https://www.brycewray.com).
 
-See the [online demo](https://hugo-solo.vercel.app/).
-
 ## How to use
 
 1. Clone this to a local repo.
